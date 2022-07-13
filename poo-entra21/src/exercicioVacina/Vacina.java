@@ -1,4 +1,4 @@
-package entidadeM;
+package exercicioVacina;
 
 public class Vacina {
 

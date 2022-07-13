@@ -1,4 +1,4 @@
-package entidade;
+package exercicioClassesAbstratas;
 
 public class Conta {
 	
@@ -15,13 +15,13 @@ public class Conta {
 	}
 
 	public double sacar(double amount) {
-		if (amount <= this.balance) {
-			this.balance = this.balance - amount;
-		} else {
-			amount = this.balance;
-			this.balance = 0d;
+		if(amount < 0)
+		{
+			System.out.println("Não pode ser sacado um valor negativo!");
+			return 0;
 		}
-		return amount;
+		this.balance = this.balance - amount;
+		return balance;
 	}
 	
 	public void depositar(double amount) {

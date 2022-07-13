@@ -1,8 +1,8 @@
 package Principal;
 
-import entidade.Conta;
+import exercicioClassesAbstratas.Conta;
 
-public class PrincipalLista1 {
+public class ExercicioContaBanco {
 
 	public static void main(String[] args) {
 		

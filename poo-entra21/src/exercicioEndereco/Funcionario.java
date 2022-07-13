@@ -1,4 +1,4 @@
-package entidade;
+package exercicioEndereco;
 
 public class Funcionario {
 
@@ -7,14 +7,16 @@ public class Funcionario {
 	private int idade;
 	private String cpf;
 	private String dataAdmissao;
+	private Endereco enderecoResidencial;
 	
-	public Funcionario(String nome, double salario, int idade, String cpf, String dataAdmissao) {
+	public Funcionario(String nome, double salario, int idade, String cpf, String dataAdmissao, Endereco endereco) {
 		super();
 		this.nome = nome;
 		this.salario = salario;
 		this.idade = idade;
 		this.cpf = cpf;
 		this.dataAdmissao = dataAdmissao;
+		this.enderecoResidencial = endereco;
 	}
 
 	public double getSalarioLiquido() {
@@ -61,5 +63,16 @@ public class Funcionario {
 	public void setDataAdmissao(String dataAdmissao) {
 		this.dataAdmissao = dataAdmissao;
 	}	
+	
+	public Endereco getEnderecoResidencial() {
+		return enderecoResidencial;
+	}
+
+	public void setEnderecoResidencial(Endereco endereco) {
+		this.enderecoResidencial = endereco;
+	}
+
+
+	
 
 }

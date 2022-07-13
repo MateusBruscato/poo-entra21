@@ -1,16 +1,27 @@
-package entidade;
+package exercicioSalarios;
+
+import exercicioEndereco.Endereco;
 
 public class ChefeSecao extends Funcionario {
 	
 	private String secao;
 	private double adicional;
 	
-	public ChefeSecao(String nome, double salario, int idade, String cpf, String dataAdmissao, String secao, double adicional) {
+	
+	public ChefeSecao(String nome, double salario, int idade, String cpf, String dataAdmissao,
+			String secao, double adicional) {
 		super(nome, salario, idade, cpf, dataAdmissao);
 		this.secao = secao;
 		this.adicional = adicional;
 	}
+
 	
+	public ChefeSecao(String nome, double salario, String dataAdmissao, double adicional) {
+		super(nome, salario, dataAdmissao);
+		this.adicional = adicional;
+	}
+
+
 	@Override
 	public double getSalarioLiquido() {
 		return super.getSalarioLiquido() + this.adicional;
